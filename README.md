@@ -1,4 +1,4 @@
-DOSmilesEasyModSync README for BoneLab
+DOSmile's EasyModSync README for BoneLab
 ======================================
 
 This set of scripts is designed to help you easily import and export mods for BoneLab, especially for players using the Fusion mod, which allows multiplayer gameplay but does not sync mods between players. It consists of two scripts, ImportMods.bat and ExportMods.bat, which handle the import and export processes, respectively.
