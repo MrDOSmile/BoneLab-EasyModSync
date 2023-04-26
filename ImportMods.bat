@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 :: Select the target folder for "DLLs" using folder picker
-echo Please select the target folder for "DLLs"...
+echo Please select the target folder for "DLLs"...usually your install folder under BONELAB\Mods.
 for /f "delims=" %%i in ('cscript //nologo folder_picker.vbs') do set dlls_target_folder=%%i
 echo Selected target folder for "DLLs": %dlls_target_folder%
 
