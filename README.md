@@ -37,6 +37,6 @@ Instructions:
    - Run ExportMods.bat by double-clicking it.
    - A folder picker window will open. Navigate to and select the "Mods" folder located in your BoneLab game installation directory.
    - The script will copy the contents from the outbound directories back to the "Outgoing" folder, maintaining the same structure as the "Incoming" folder.
-   - Note that this step does not actually export the mods. It merely consolidates them in the "Outgoing" folder. To share your mod pack with others, you will need to upload the contents of the "Outgoing" folder to a platform like Google Drive or GitHub, and provide a download link.
+   - Note that this step does not actually export the mods. It merely consolidates them in the "Outgoing" folder. To share your mod(s) list with others, you will need to upload the contents of the "Outgoing" folder to a platform like Google Drive or GitHub, and provide a download link.
 
 Please ensure that you have the correct folder structure and that the mods are placed in the appropriate subfolders before running the scripts.
