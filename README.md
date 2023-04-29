@@ -2,13 +2,13 @@
 
 ---
 **SWAPPING PROFILES RE-DOWNLOADS ALL MODS IN THE PROFILE EVERY TIME.**
-**ALL CURRENT MODS WILL BE DELETED AND REPLACED WITH THE DOWNLOADED MODS.**
+**ALL CURRENT MODS WILL BE DELETED AND REPLACED WITH THE NEWLY DOWNLOADED MODS.**
 ---
 **SWAPPING PROFILES RE-DOWNLOADS ALL MODS IN THE PROFILE EVERY TIME.**
-**ALL CURRENT MODS WILL BE DELETED AND REPLACED WITH THE DOWNLOADED MODS.**
+**ALL CURRENT MODS WILL BE DELETED AND REPLACED WITH THE NEWLY DOWNLOADED MODS.**
 ---
 **SWAPPING PROFILES RE-DOWNLOADS ALL MODS IN THE PROFILE EVERY TIME.**
-**ALL CURRENT MODS WILL BE DELETED AND REPLACED WITH THE DOWNLOADED MODS.**
+**ALL CURRENT MODS WILL BE DELETED AND REPLACED WITH THE NEWLY DOWNLOADED MODS.**
 ---
 
 ─────────────────────────────────────────────────
@@ -81,5 +81,5 @@ Check your internet connection if you're having issues downloading the mods.
 
 Additional Notes
 ---
-The program will always download and install the Fusion and BoneLib mods, regardless of whether they're in the mod_urls.txt file.
+The program will always download and install the Fusion and BoneLib mods, regardless of whether they're in the <PROFILE>.txt file.
 Every time you switch profiles, the Mods folder and the AppData LocalLow directory will be completely replaced with the new profile's mods to ensure only the active profile's mods are present.
