@@ -1,7 +1,9 @@
 README
 
 ─────────────────────────────────────────────────
+
                  IMPORTANT NOTE
+                 
 ─────────────────────────────────────────────────
 
 As of now, there is no official support for mod packs or a mod manager to
