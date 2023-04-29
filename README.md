@@ -33,8 +33,9 @@
 
 Quick Start Guide
 ---
-If you haven't downloaded and installed MelonLoader 0.5.7 (MUST BE 0.5.7), go ahead and do that first. It's needed for the script to run.
-Secondly, if you don't have Python 3.10 installed, the script will prompt you to install it, and it will download the installer for you, as this program was written in Python.
+First, please ensure that under the steam game properties option, that you have opted IN for the Beta version. Nothing else will work otherwise.
+If you haven't downloaded and installed MelonLoader 0.5.7 **(MUST BE 0.5.7)**, go ahead and do that next. It's needed for the script to run.
+Lastly, if you don't have Python 3.10 installed, the script will prompt you to install it, and it will download the installer for you, as this program was written in Python.
 
 Download the entire repository as a ZIP file and extract it to a location on your computer.
 
