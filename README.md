@@ -1,8 +1,8 @@
 README
 
-┌────────────────────────────────────────────────────────────────────────────┐
-│                              IMPORTANT NOTE                                │
-└────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────┐
+│                IMPORTANT NOTE                   │
+└─────────────────────────────────────────────────┘
 
 As of now, there is no official support for mod packs or a mod manager to
 synchronize mods for BONE LABS. This program is my attempt to provide a
