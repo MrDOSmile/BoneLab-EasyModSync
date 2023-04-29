@@ -35,9 +35,10 @@ Quick Start Guide
 ---
 1. Ensure BONE LABS is installed on your computer.
 2. In your Steam library, right-click on BONE LABS, go to "Properties," select the "Betas" tab, and choose "public-beta" from the dropdown menu.
-3. Download and install Melon Loader automated installer (https://melonwiki.xyz/#/?id=requirements). **Uncheck the option for use latest version and select 0.5.7**.
-4. Run BONE LABS once with Melon Loader installed to generate the necessary folders.
-5. If Python 3.10 is not found on your computer, the 'run.bat' script will download the Python 3.10 installer for you. Make sure to enable the "Add Python to environment variables" setting during the installation process, as it is crucial for the program to work. Once Python is installed, you will need to relaunch the 'run.bat' script.
+3. Download Melon Loader automated installer (https://melonwiki.xyz/#/?id=requirements). 
+4. During Melon Loader installation, **Uncheck the option for use latest version and select 0.5.7**.
+5. Run BONE LABS once with Melon Loader installed to generate the necessary folders.
+6. If Python 3.10 is not found on your computer, the 'run.bat' script will download the Python 3.10 installer for you. Make sure to enable the "Add Python to environment variables" setting during the installation process, as it is crucial for the program to work. Once Python is installed, you will need to relaunch the 'run.bat' script.
 7. On this GitHub repository page, click the green "Code" button located near the top-right corner, then select "Download ZIP" to download the entire repository. Extract the contents to a location on your computer.
 8. Inside the 'Profiles' folder, you will find a pre-made profile called 'DOS.txt' containing a general mix of levels, avatars, gadgets, weapons, vehicles, and other items. You can use this profile or create a new text file named <PROFILE_NAME_HERE>.txt in the 'Profiles' folder. To add mods, visit the official mod page, right-click on the "Windows Download" button, and select "Copy link address." Paste the direct download links for the mods you want, one per line, into the text file.
 9. Double-click on the 'run.bat' script to start the program.
