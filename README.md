@@ -2,23 +2,21 @@ README
 
 ─────────────────────────────────────────────────
 
-                 IMPORTANT NOTE
-                 
+    IMPORTANT NOTE
+    As of now, there is no official support for mod packs or a mod manager to
+    synchronize mods for BONE LABS. This program is my attempt to provide a
+    user-friendly solution that does not involve redistributing mods, but
+    instead utilizes direct download links from the official mod sources.
+
+    My intention is to enhance the gaming experience for everyone and ensure a
+    consistent and enjoyable multiplayer experience in BONE LABS using the Fusion
+    mod. I hope you find this tool helpful and enjoyable to use.
+
+    Please understand that my intentions are genuine, and I only wish to bring
+    more fun and cohesion to the BONE LABS community. Your understanding is
+    appreciated!
+
 ─────────────────────────────────────────────────
-
-As of now, there is no official support for mod packs or a mod manager to
-synchronize mods for BONE LABS. This program is my attempt to provide a
-user-friendly solution that does not involve redistributing mods, but
-instead utilizes direct download links from the official mod sources.
-
-My intention is to enhance the gaming experience for everyone and ensure a
-consistent and enjoyable multiplayer experience in BONE LABS using the Fusion
-mod. I hope you find this tool helpful and enjoyable to use.
-
-Please understand that my intentions are genuine, and I only wish to bring
-more fun and cohesion to the BONE LABS community. Your understanding is
-appreciated!
----
 
 Quick Start Guide
 Download the entire repository as a ZIP file and extract it to a location on your computer.
