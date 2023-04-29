@@ -63,6 +63,7 @@ Requirements
 ---
 
 Python 3.10: The program is written in Python and requires version 3.10. If you don't have it installed, the run.bat script will prompt you to install it, and it will download the installer for you.
+---
 The requests module: This module is necessary for downloading files. The run.bat script will attempt to install it automatically. If it fails, you may need to install Python 3.10 and the requests module manually.
 
 ---
