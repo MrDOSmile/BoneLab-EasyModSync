@@ -2,7 +2,15 @@
 
 ─────────────────────────────────────────────────
 
-    IMPORTANT NOTE
+    # # IMPORTANT NOTE
+    ---
+    # SWAPPING PROFILES RE-DOWNLOADS ALL MODS IN THE PROFILE EVERY TIME.
+    # ALL CURRENT MODS WILL BE DELETED AND REPLACE WITH THE DOWNLOADED MODS.
+    # SWAPPING PROFILES RE-DOWNLOADS ALL MODS IN THE PROFILE EVERY TIME.
+    # ALL CURRENT MODS WILL BE DELETED AND REPLACE WITH THE DOWNLOADED MODS.
+    # SWAPPING PROFILES RE-DOWNLOADS ALL MODS IN THE PROFILE EVERY TIME.
+    # ALL CURRENT MODS WILL BE DELETED AND REPLACE WITH THE DOWNLOADED MODS.
+    ---
     As of now, there is no official support for mod packs or a mod manager to
     synchronize mods for BONE LABS. This program is my attempt to provide a
     user-friendly solution that does not involve redistributing mods, but
@@ -22,10 +30,10 @@ Quick Start Guide
 ---
 Download the entire repository as a ZIP file and extract it to a location on your computer.
 
-Create a new text file named mod_urls.txt inside the Profiles folder. Add the direct download links for the mods you want to download, one per line.
-Double-click on run.bat to start the program. If you don't have Python 3.10 installed, it will download and install it for you. It will also install the    requests module if necessary.
+Create a new text file and name it <PROFILE_NAME_HERE>.txt inside the Profiles folder. Add the direct download links for the mods you want to download, one per line to the text file.
+Double-click on run.bat to start the program. If you don't have Python 3.10 installed, it will download and install it for you. It will also install the requests module if necessary.
 
-When prompted, select the profile text file you created in step 2.
+When prompted, select the profile text file you created in step 2. (There can be multiple)
 
 If it's your first time running the program, you'll be prompted to select a folder for the DLL files. This should typically be the Mods folder in your game directory (e.g., C:\Program Files (x86)\Steam\steamapps\common\BONE LABS\Mods).
 
