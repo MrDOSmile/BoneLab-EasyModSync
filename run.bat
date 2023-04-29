@@ -1,25 +1,31 @@
 @echo off
 
-set "python_exe=python"
-
-where python 2>nul || (
-    echo Python not found in the system's PATH. Checking the default installation path...
-    set "python_exe=C:\Python310\python.exe"
+:try_pip_install
+echo Attempting to install the required pip packages...
+python -m pip install --upgrade pip >nul 2>&1 && (
+    echo Successfully upgraded pip.
+) || (
+    goto pip_install_failed
 )
 
-if not exist "%python_exe%" (
-    echo Python 3.10 is not installed. Downloading and installing...
-    powershell -Command "(New-Object Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe', 'python-3.10.0-amd64.exe')"
-    .\python-3.10.0-amd64.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0
-    echo Installation complete.
+python -m pip install requests >nul 2>&1 && (
+    echo Successfully installed requests.
+) || (
+    goto pip_install_failed
 )
-
-echo Installing requests module if not installed...
-"%python_exe%" -m pip install --upgrade pip
-"%python_exe%" -m pip install requests
 
 echo Running the mod_downloader.py script...
-"%python_exe%" .\mod_downloader.py
+python .\mod_downloader.py
 
 echo Finished.
 pause
+exit /b 0
+
+:pip_install_failed
+echo Python 3.10 is not installed or there is a problem with your Python installation.
+echo Downloading Python 3.10 installer for you...
+powershell -Command "(New-Object Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe', 'python-3.10.0-amd64.exe')"
+echo The Python 3.10 installer has been downloaded as python-3.10.0-amd64.exe.
+echo Please install Python 3.10 and try running the script again.
+pause
+exit /b 1
