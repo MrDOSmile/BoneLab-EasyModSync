@@ -31,6 +31,5 @@ https://api.mod.io/v1/games/3809/mods/2574661/files/3390210/download
 https://api.mod.io/v1/games/3809/mods/2419713/files/3150211/download
 https://thunderstore.io/package/download/Hazzy/Infected_Gamemode/1.1.0/
 https://thunderstore.io/package/download/squidypal/LastOneStanding_Gamemode/1.1.2/
-https://thunderstore.io/package/download/notnotnotswipez/TroubleInBonetown/1.1.0/
 https://thunderstore.io/package/download/Lakatrazz/Ragdoll_Player/1.1.0/
 https://thunderstore.io/package/download/Lakatrazz/Quicksilver/1.4.0/
