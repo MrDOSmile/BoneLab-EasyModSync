@@ -33,10 +33,13 @@
 
 Quick Start Guide
 ---
+If you haven't downloaded and installed MelonLoader 0.5.7 (MUST BE 0.5.7), go ahead and do that first. It's needed for the script to run.
+Secondly, if you don't have Python 3.10 installed, the script will prompt you to install it, and it will download the installer for you, as this program was written in Python.
+
 Download the entire repository as a ZIP file and extract it to a location on your computer.
 
 Create a new text file and name it <PROFILE_NAME_HERE>.txt inside the Profiles folder. Add the direct download links for the mods you want to download, one per line to the text file.
-Double-click on run.bat to start the program. If you don't have Python 3.10 installed, the script will prompt you to install it, and it will download the installer for you.
+Double-click on run.bat to start the program. 
 
 When prompted, select the profile text file you created in step 2. (There can be multiple)
 
