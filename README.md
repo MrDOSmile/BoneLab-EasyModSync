@@ -40,7 +40,7 @@ Quick Start Guide
 5. If Python 3.10 is not found on your computer, the 'run.bat' script will download the Python 3.10 installer for you. Make sure to enable the "Add Python to environment variables" setting during the installation process, as it is crucial for the program to work. Once Python is installed, you will need to relaunch the 'run.bat' script.
 7. On this GitHub repository page, click the green "Code" button located near the top-right corner, then select "Download ZIP" to download the entire repository. Extract the contents to a location on your computer.
 8. Inside the 'Profiles' folder, you will find a pre-made profile called 'DOS.txt' containing a general mix of levels, avatars, gadgets, weapons, vehicles, and other items. You can use this profile or create a new text file named <PROFILE_NAME_HERE>.txt in the 'Profiles' folder. To add mods, visit the official mod page, right-click on the "Windows Download" button, and select "Copy link address." Paste the direct download links for the mods you want, one per line, into the text file.
-9. Double-click on the 'run.bat' script to start the program. The script will install the 'requests' module if it's not already installed.
+9. Double-click on the 'run.bat' script to start the program.
 10. When prompted, select the profile text file you want to use (either the provided 'DOS.txt' or the one you created in step 7).
 11. If it's your first time running the program, you'll be prompted to select a folder for the DLL files. This should typically be the 'Mods' folder in your game directory (e.g., C:\Program Files (x86)\Steam\steamapps\common\BONE LABS\Mods).
 12. The program will download the mods, extract the contents, and move the files to the appropriate locations.
