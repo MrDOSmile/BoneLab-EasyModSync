@@ -35,7 +35,7 @@ Quick Start Guide
 ---
 1. Ensure BONE LABS is installed on your computer.
 2. In your Steam library, right-click on BONE LABS, go to "Properties," select the "Betas" tab, and choose "public-beta" from the dropdown menu.
-3. Download and install Melon Loader v0.5.7 (https://github.com/HerpDerpinstine/MelonLoader/releases/tag/v0.5.7).
+3. Download and install Melon Loader automated installer (https://melonwiki.xyz/#/?id=requirements). **Uncheck the option for use latest version and select 0.5.7**.
 4. Run BONE LABS once with Melon Loader installed to generate the necessary folders.
 5. If Python 3.10 is not found on your computer, the 'run.bat' script will download the Python 3.10 installer for you. Make sure to enable the "Add Python to environment variables" setting during the installation process, as it is crucial for the program to work. Once Python is installed, you will need to relaunch the 'run.bat' script.
 7. On this GitHub repository page, click the green "Code" button located near the top-right corner, then select "Download ZIP" to download the entire repository. Extract the contents to a location on your computer.
