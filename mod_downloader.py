@@ -2,6 +2,7 @@ import os
 import shutil
 import zipfile
 import requests
+import pathlib
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename, askdirectory
 
@@ -13,26 +14,66 @@ mandatory_mods = [
 def download_file(url, save_path):
     response = requests.get(url, stream=True)
     content_disposition = response.headers.get('Content-Disposition')
+
     if content_disposition:
         file_name = content_disposition.split('filename=')[-1].strip('"')
-        save_path = os.path.join(os.path.dirname(save_path), file_name)
-    elif not os.path.splitext(save_path)[1]:
-        save_path += '.zip'
+    else:
+        file_name = url.split('/')[-2] + '.zip'
+
+    save_path = os.path.join(os.path.dirname(save_path), file_name)
+    total_size = int(response.headers.get('content-length', 0))
 
     with open(save_path, 'wb') as f:
         for chunk in response.iter_content(chunk_size=8192):
             f.write(chunk)
+            bytes_downloaded = f.tell()
+            percentage = int(100 * bytes_downloaded / total_size)
+            print(f"Downloading {url}: {percentage}%", end='\r')
+
     return save_path
 
-def extract_zip(file_path, extract_path):
-    with zipfile.ZipFile(file_path, 'r') as zip_ref:
-        zip_ref.extractall(extract_path)
 
-def move_files(src, dst, extension):
-    for root, _, files in os.walk(src):
+
+def extract_zip(zip_path, extract_path):
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+        for member in zip_ref.infolist():
+            if not member.is_dir():
+                print(f"Extracting {member.filename}...")
+                try:
+                    zip_ref.extract(member, extract_path)
+                    print(f"Successfully extracted {member.filename}")
+                except Exception as e:
+                    print(f"Failed to extract {member.filename}: {e}")
+
+
+
+def extract_and_move_files(extract_path, dll_destination, appdata_destination):
+    for root, dirs, files in os.walk(extract_path):
         for file in files:
-            if file.endswith(extension):
-                shutil.move(os.path.join(root, file), dst)
+            file_path = os.path.join(root, file)
+
+            # Move files from Mods folder to the specified folder
+            if "Mods" in root:
+                destination_path = os.path.join(dll_destination, file)
+                print(f"Moving {file_path} to {destination_path}")
+                shutil.move(file_path, destination_path)
+
+            # Move files from Plugins folder to the specified folder
+            if "Plugins" in root:
+                plugins_path = os.path.join(os.path.dirname(dll_destination), "Plugins")
+                destination_path = os.path.join(plugins_path, file)
+                print(f"Moving {file_path} to {destination_path}")
+                shutil.move(file_path, destination_path)
+
+        # Move other contents to AppData LocalLow directory
+        for directory in dirs:
+            if directory not in ["Mods", "Plugins"]:
+                source_path = os.path.join(root, directory)
+                destination_path = os.path.join(appdata_destination, directory)
+                print(f"Moving {source_path} to {destination_path}")
+                shutil.move(source_path, destination_path)
+
+
 
 def get_saved_dll_folder(file_path):
     if os.path.exists(file_path):
@@ -83,7 +124,7 @@ def main():
         extract_folder = os.path.join(profile_dir, os.path.splitext(file_name)[0])
         extract_zip(save_path, extract_folder)
 
-        move_files(extract_folder, dll_folder, '.dll')
+        extract_and_move_files(extract_folder, dll_folder, app_data_folder)
 
         os.makedirs(app_data_folder, exist_ok=True)
 
