@@ -11,6 +11,7 @@
 **ALL CURRENT MODS WILL BE DELETED AND REPLACED WITH THE NEWLY DOWNLOADED MODS.**
 ---
 **YOU HAVE BEEN WARNED**
+---
 ─────────────────────────────────────────────────
 
     IMPORTANT NOTE
